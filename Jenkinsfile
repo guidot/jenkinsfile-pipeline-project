@@ -3,10 +3,9 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo "My way to reinvent myself"
-                sh 'df -h'
-		sh 'lsblk'
-                echo 'not using shell in the Jenkinsfile'
+                echo 'My way to say "Bla ble bli"'
+                sh 'du -sh $(pwd)'
+                echo 'Integrating Jenkins Pipeline with GitHub Webhook using Jenkinsfile'
             }
         }
     }

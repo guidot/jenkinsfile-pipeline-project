@@ -13,5 +13,7 @@ pipeline {
                 echo 'GTS: Python time!'
                 sh 'python3 --version'
                 sh 'python3 pipeline.py'
+            }
+        }
     }
 }
